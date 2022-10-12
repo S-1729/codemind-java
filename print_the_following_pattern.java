@@ -5,9 +5,10 @@ class Main {
 		int n=scan.nextInt();
 		for(int i=1;i<=n;i++)
 		{
-		    for(int  j=n;j>=1;j--)
+		    for(int  j=1;j<=n;j++)
 		    {
-		        System.out.print(j+" ");
+		        char a=(char)(64+i);
+		        System.out.print(a+" ");
 		    }
 		    System.out.println();
 		}
