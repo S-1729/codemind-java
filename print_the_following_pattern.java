@@ -13,18 +13,20 @@ class Solution{
     {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
-        int l=1;
         for(int i=0;i<n;i++)
         {
             for(int j=i;j<n-1;j++)
             {
                 System.out.print(" ");
             }
-            for(int k=0;k<l;k++)
+            for(int k=i+1;k>1;k--)
             {
-                System.out.print(i+1);
+                System.out.print(k-1);
             }
-            l+=2;
+            for(int k=0;k<i+1;k++)
+            {
+                System.out.print(k);
+            }
             System.out.println();
         }
     }
