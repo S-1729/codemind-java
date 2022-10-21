@@ -4,14 +4,16 @@ class Solution{
     {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
+        int m=n/2;
         for(int i=0;i<n;i++)
         {
-            for(int j=0;j<n;j++)
+            for(int j=1;j<=n-2;j++)
             {
-                if(i==j || j==0 || j==n-1)
-                    System.out.print("* ");
-                else
-                    System.out.print("  ");
+                System.out.print(j);
+            }
+            for(int k=1;k<=n-3;k++)
+            {
+                System.out.print(k);
             }
             System.out.println();
         }
