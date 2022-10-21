@@ -4,14 +4,13 @@ class Solution{
     {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
-        int m=n/2;
         for(int i=0;i<n;i++)
         {
             for(int j=1;j<=n-2;j++)
             {
                 System.out.print(j);
             }
-            for(int k=1;k<=n-3;k++)
+            for(int k=n-3;k>=1;k--)
             {
                 System.out.print(k);
             }
